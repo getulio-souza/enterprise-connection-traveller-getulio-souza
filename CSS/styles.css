@@ -1,0 +1,134 @@
+/*
+====================================
+Global styles
+====================================
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+h1{
+  font-size: 4rem;   
+}
+
+h2{
+  font-size: 3rem;   
+}
+h3{
+  font-size: 2rem;   
+}
+h4{
+  font-size: 1rem;   
+}
+
+
+/*
+====================================
+Menu (tela grande)
+====================================
+*/
+
+.menu_grande ul{
+    background-color: transparent;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.menu_grande li{
+    color: rgb(49, 149, 50);
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1rem 2rem;
+    float: right;
+    transition: .5s;
+}
+.menu_grande li:hover{
+ color: blue;
+}
+
+/*
+====================================
+Menu (lateral)
+====================================
+*/
+.menu_lateral{
+    display: none;
+}
+
+/*
+====================================
+Banner
+====================================
+*/
+
+.banner_img{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 2;
+    background-image: linear-gradient(0,0,0,0.5);
+}
+
+.banner_header{
+    display: flex;
+    color: red;
+    z-index: 1;
+}
+
+/*
+====================================
+Gastronomia
+====================================
+*/
+
+.food_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://static.toiimg.com/photo/57535757.cms);
+}
+
+/*
+====================================
+vida noturna
+====================================
+*/
+
+.night_life{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://sozbg.rs/wp-content/uploads/2021/10/Belgrade-nightlife-tips-for-how-to-survive.jpg);
+}
+
+/*
+====================================
+Entretenimento
+====================================
+*/
+
+.fun_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://dsdsuzy1jtjfw.cloudfront.net/wp-content/uploads/2019/11/beach-park_arrepius-credito-joomelo-2-4.jpg);
+}
+
+/*
+====================================
+Rodapé
+====================================
+*/
