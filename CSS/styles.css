@@ -31,8 +31,13 @@ h2{
 h3{
   font-size: 1rem;   
 }
+
 h4{
   font-size: 0.75rem;   
+}
+
+h1,h2,h4{
+    text-align: center;
 }
 
 
@@ -41,6 +46,10 @@ h4{
 Menu (tela grande)
 ====================================
 */
+
+.nav--hidden{
+  transform: translateY(-80px);
+}
 
 .menu_grande ul{
     background-color: transparent;
@@ -144,7 +153,7 @@ Gastronomia
 
 .food_container{
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background-image: url(https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1608506169128-S6KYNEV61LEP5MS1UIH4/traditional-food-around-the-world-Travlinmad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,22 +161,37 @@ Gastronomia
     
 }
 
-.food_container h2{
-    text-align: center;
-    color: red;
-}
-
 .food_background{
-    background-color: black;
+    background-color: yellow;
     color: rgb(225, 225, 106);
 }
 
-.food_box{
+.food_container h2{
+    color: red;
+}
+
+.food_boxes{
     width: 250px;
     height: 200px;
     background-color: rgb(225, 225, 106);
     border-radius: 2rem;
+    margin-top: 4rem;
 }
+
+@media screen and (max-width: 678px){
+    .food_boxes{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.food_icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 1rem;
+}
+
 
 .food{
     margin: 1rem;
@@ -181,12 +205,6 @@ Gastronomia
     margin-bottom: 0.5rem;
 }
 
-.food_icons{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 1rem;
-}
 
 /*
 ====================================
@@ -198,7 +216,20 @@ vida noturna
     width: 100vw;
     height: 100vh;
     background-image: url(https://sozbg.rs/wp-content/uploads/2021/10/Belgrade-nightlife-tips-for-how-to-survive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
+
+.night_life h2{
+    color: #fff;
+}
+
+.night_box{
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
 
 /*
 ====================================
@@ -212,6 +243,9 @@ Entretenimento
     background-image: url(https://dsdsuzy1jtjfw.cloudfront.net/wp-content/uploads/2019/11/beach-park_arrepius-credito-joomelo-2-4.jpg);
 }
 
+.fun_container h2{
+  color: blue;
+}
 /*
 ====================================
 Rodapé
