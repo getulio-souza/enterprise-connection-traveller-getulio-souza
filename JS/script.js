@@ -12,3 +12,16 @@ window.addEventListener("scroll", ()=>{
 
     lastScrollY = window.scrollY;
 })
+
+//audio button
+
+const audioFood = new Audio();
+audioFood.src = "../audios/food_audio.mp3"
+
+const audioNight = new Audio();
+audioNight.src = "../audios/night_audio.mp3"
+
+const audioFun = new Audio();
+audioFun.src = "../audios/fun_audio.mp3"
+
+

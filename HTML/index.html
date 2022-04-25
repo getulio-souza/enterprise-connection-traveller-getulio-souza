@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.min.css">
     <title>Traveller - PCD</title>
 </head>
 <body>
@@ -48,85 +48,106 @@
     <!--fim da primeira página -->
 
     <!-- GASTRONOMIA -->
+    <div class="food_background">
+        <h2>Hora de abrir o apetite!</h2>
+    </div>
     <section class="food_container">
-        <div class="food_background">
-            <h2>Hora de abrir o apetite!</h2>
-        </div>
-
-        <section class="food_icons">
         <!-- Onde comer -->
-        <div class="food_boxes">
-            <article class="food">
-                <h3>Onde vamos comer?</h3>
-                <i class="fas fa-solid fa-fork-knife"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
+           <article class="food_box">
+               <div class="food_box_content">
+                   <h3>Onde vamos comer?</h3>
+                   <p>Existe uma infinidade de lugares que você pode abrir o apetite e alguns estão mais perto do que você imagina.</p>
+                </div>
             </article>
-        </div>
-            <!-- Fim de onde comer -->
+                <!-- Fim de onde comer -->
 
         <!-- O que comer -->
-        <div class="food_boxes">
-            <article class="food">
+             <article class="food_box">
+            <div class="food_box_content">
                 <h3>O que tem de bom?</h3>
-                <i class=" fas fa-solid fa-fork-knife"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
+                <p>São tantas opções que ficam dificil escolher só uma: massas, pratos típicos e até receitas caseiras abrem o apetite do viajante.</p>
+            </div>
             </article>
-        </div>
             <!-- Fim de o que comer -->
         
         <!-- Quanto gastar -->
-        <div class="food_boxes">
-
-            <article class="food">
+            <article class="food_box">
+            <div class="food_box_content">
                 <h3>Quanto vou gastar?</h3>
-                <i class=" fa-solid fa-fork-knife"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
+                <p>O mesmo vale para o quanto você quer gastar. Mais uma vez o seu bolso é quem manda!</p>
+            </div>
             </article>
-        </div>
+            <!-- audio & text button -->
+            <article class="btn-container">
+                    <button id="food_audio_btn" onclick="audioFood.play();">Escute nossas dicas</button>
+                    <button id="food_text_btn">Leia nossas dicas</button>
+            </article>
+        </section>
         <!-- Fim de o que comer -->
-      </section>
-    </section>
 
         <!-- VIDA NOTURNA -->
-    <section class="night_life">
-        <h2>Explore a vida noturna da cidade</h2>
-        <!-- Onde ir -->
-        <article class="night_box">
-            <h3>Onde ir</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
-        </article>
-        <!-- Fim de Onde ir -->
+        <h2 class="night_life_title">Chegou o momento de curtir a noite!</h2>
+        <section class="night_life_container">
+       <!-- Onde comer -->
+           <article class="night_life_box">
+               <div class="night_life_box_content">
+                   <h3>Onde vamos comer?</h3>
+                   <p>Antes de cair na pista de dança e conhecer pessoas novos, que tal aproveitar para beliscar algo?</p>
+            </article>
+                <!-- Fim de onde comer -->
 
-        <!-- Onde ir -->
-        <article class="night_box">
-            <h3>Como ir</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
+        <!-- O que comer -->
+             <article class="night_life_box">
+            <div class="night_life_box_content">
+                <h3>O que tem de bom?</h3>
+                <p>Agora temos energia de sobra para curtir a noite e nos divertirmos ao máximo!</p>
+            </div>
         </article>
-        <!-- Fim de Onde ir -->
     </section>
+    <article class="night_btn_container">
+        <button id="night_life_audio_btn" onclick="audioNight.play();">Escute nossas dicas</button>
+        <button id="night_life_text_btn">Leia nossas dicas</button>
+       </article>
 
     <!-- ENTRETENIMENTO -->
+        <h2 class="fun_title">Sol e muita diversão!</h2>
     <section class="fun_container">
-        <h2>Um pouco de diversão não faz mal para ninguém!</h2>
-        <!-- Onde ir -->
-        <article class="fun">
-            <h3>Onde ir</h3>
-            <img src="" alt="imagem ilustrativa de onde ir">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
-        </article>
-        <!-- Fim de Onde ir -->
+       <!-- Onde comer -->
+           <article class="fun_box">
+               <div class="fun_box_content">
+                   <h3>Lugares para conhecer</h3>
+                   <p>Quem está sempre em busca de uma aventutra, não vai se decepcionar com a quantidade de pontos turísticos que existem dentro e fora do pais.</p>
+                   <div>
+                       <button id="fun_text_btn" onclick="audioFun.play();">Escute nossas dicas</button>
+                   </div>
+                </div>
+            </article>
+                <!-- Fim de onde comer -->
 
-        <!-- Onde ir -->
-        <article class="fun">
-            <h3>Onde ir</h3>
-            <img src="" alt="imagem ilustrativa de onde ir">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore.</p>
-        </article>
-        <!-- Fim de Onde ir -->
+        <!-- Onde comer -->
+           <article class="fun_box">
+               <div class="fun_box_content">
+                   <h3>O que fazer</h3>
+                   <p>Separamos algumas dicas que vão despertar a sua curiosidade. Clique no botão para ouvir.</p>
+                   <div>
+                       <button id="fun_text_btn">Leia nossas dicas</button>
+                   </div>
+                </div>
+            </article>
+                <!-- Fim de onde comer -->
     </section>
-        
     <!-- Rodapé -->
-     
+    <footer class="footer">
+        <article>
+            <div>
+                <ul>
+                    <li>fdklfjd</li>
+                    <li>fdklfjd</li>
+                    <li>fdklfjd</li>
+                </ul>
+            </div>
+        </article>
+    </footer>
     <!--javascript tag-->
     <script src="../JS/script.js"></script>
 
