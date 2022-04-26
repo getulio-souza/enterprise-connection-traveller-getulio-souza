@@ -25,20 +25,6 @@ const audioFun = new Audio();
 audioFun.src = "../audios/fun_audio.mp3"
 
 
-//food text modal
-const openModalFood = document.getElementById("food_text_btn");
-const modalFood = document.getElementById("modal_food");
-const closeModalFood = document.getElementById("close_modal_food");
-
-
-openModalFood.addEventListener("click", () => {
-    modalFood.classList.add('show_modal_food')
-});
-
-closeModalFood.addEventListener("click", () => {
-    modalFood.classList.remove('show_modal_food')
-});
-
 
 //night text modal
 const openNight = document.getElementById("night_life_text_btn");
@@ -55,17 +41,17 @@ closeNight.addEventListener("click", () => {
 });
 
 
+
 //fun text modal
-const open = document.getElementById("fun_text_btn");
-const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("close_fun_text");
+    const openFun = document.getElementById("fun_text_btn");
+    const modalFun = document.getElementById("modal_container_fun");
+    const closeFun = document.getElementById("close_fun_text");    
 
-
-open.addEventListener("click", () => {
-    modal_container.classList.add('show')
+openFun.addEventListener("click", () => {
+    modalFun.classList.add('show')
 });
 
-close.addEventListener("click", () => {
-    modal_container.classList.remove('show')
+closeFun.addEventListener("click", () => {
+    modalFun.classList.remove('show')
 });
 
