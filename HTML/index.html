@@ -185,16 +185,6 @@
                 <p>Quem está sempre em busca de uma aventutra, não vai se decepcionar com a quantidade de pontos
                     turísticos que existem dentro e fora do pais.</p>
                 <button id="fun_text_btn">Leia nossas dicas</button>
-            </div>
-        </article>
-        <!-- Fim de onde comer -->
-
-        <!-- Onde comer -->
-        <article class="fun_box">
-            <div class="fun_box_content">
-                <h3>O que fazer</h3>
-                <p>Separamos algumas dicas que vão despertar a sua curiosidade. Clique no botão para ouvir.</p>
-                <button id="fun_text_btn" onclick="audioFun.play();">Escute nossas dicas</button>
                 <!-- modal -->
                 <div class="modal_container" id="modal_container">
                     <article class="modal">
@@ -210,11 +200,16 @@
                             conhecer antes de morrer — e um dos pontos turísticos mais visitados do mundo.</p>
 
                         <h4>2. Torre Eiffel</h4>
-                        <p>A Torre Efiffel é uma experiência única e praticamente obrigatória para todos os visitantes de Paris. Os melhores momentos para subir na torre são no início da manhã, quando ainda não há filas  intermináveis, ou ao anoitecer, para desfrutar da cidade das luzes em todo o seu esplendor.
+                        <p>A Torre Efiffel é uma experiência única e praticamente obrigatória para todos os visitantes
+                            de Paris. Os melhores momentos para subir na torre são no início da manhã, quando ainda não
+                            há filas intermináveis, ou ao anoitecer, para desfrutar da cidade das luzes em todo o seu
+                            esplendor.
                         </p>
 
                         <h4>3. Cataratas do iguaçu</h4>
-                        <p> As Cataratas do Iguaçu são formadas por um conjunto de 275 quedas d’água de até 80 metros de altura, no Rio Iguaçu. Entretanto, o número das quedas varia de 150 a 300, dependendo da época do ano, principalmente, das chuvas.</p>
+                        <p> As Cataratas do Iguaçu são formadas por um conjunto de 275 quedas d’água de até 80 metros de
+                            altura, no Rio Iguaçu. Entretanto, o número das quedas varia de 150 a 300, dependendo da
+                            época do ano, principalmente, das chuvas.</p>
 
                         <h4>4. Duomo di Milano</h4>
                         <p> Duomo di Milano é um dos monumentos mais espetaculares de toda a Itália. Tanto por dentro
@@ -228,10 +223,19 @@
                         <p>O menor país do mundo possui uma atração considerada como um dos pontos turísticos mais
                             visitados do mundo: a Basílica de São Pedro. Quem visita Roma, não pode de jeito nenhum
                             deixar de dar um pulinho no Vaticano para ver essa igreja esplendorosa.</p>
-
                         <button id="close_fun_text">Fechar</button>
                     </article>
                 </div>
+            </div>
+        </article>
+        <!-- Fim de onde comer -->
+
+        <!-- Onde comer -->
+        <article class="fun_box">
+            <div class="fun_box_content">
+                <h3>O que fazer</h3>
+                <p>Separamos algumas dicas que vão despertar a sua curiosidade. Clique no botão para ouvir.</p>
+                <button id="fun_audio_btn" onclick="audioFun.play();">Escute nossas dicas</button>
             </div>
         </article>
         <!-- Fim de onde comer -->
@@ -240,12 +244,12 @@
 
     <!-- Rodapé -->
     <footer>
-        <section class="waves">
+        <!-- <section class="waves">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
-        </section>
+        </section> -->
         <!-- social -->
         <ul class="social_icon">
             <li><a href="#">
@@ -263,18 +267,14 @@
         </ul>
         <!-- menu -->
         <ul class="menu">
-            <li><a href="#">Entretenimento</a></li>
-            <li><a href="#">Vida Noturna</a></li>
-            <li><a href="#">Gastronomia</a></li>
+            <li><a href="#fun">Entretenimento</a></li>
+            <li><a href="#night">Vida Noturna</a></li>
+            <li><a href="#food">Gastronomia</a></li>
         </ul>
         <!-- copyright -->
         <p class="copy">2022 Traveller | Todos os direitos reservados</p>
     </footer>
     <!--javascript tag-->
     <script src="../JS/script.js"></script>
-
 </body>
-
 </html>
-
-<!-- inserir audio nos textos com botão para facilitar o entendimento do conteúdo -->

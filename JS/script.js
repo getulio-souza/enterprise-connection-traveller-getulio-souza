@@ -25,7 +25,7 @@ const audioFun = new Audio();
 audioFun.src = "../audios/fun_audio.mp3"
 
 
-//night text modal
+//food text modal
 const openModalFood = document.getElementById("food_text_btn");
 const modalFood = document.getElementById("modal_food");
 const closeModalFood = document.getElementById("close_modal_food");
