@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.min.css">
     <title>Traveller - PCD</title>
 </head>
+
 <body>
 
     <!--primeira página -->
@@ -16,126 +18,226 @@
         <!-- Menu tela grande-->
         <nav class="menu_grande">
             <ul>
-                <a href="#"><li>Gastronomia</li></a>
-                <a href="#"><li>Vida Noturna</li></a>
-                <a href="#"><li>Entretenimento</li></a>
+                
+                <a href="#fun">
+                    <li>Entretenimento</li>
+                </a>
+                
+                <a href="#night">
+                    <li>Vida Noturna</li>
+                </a>
+
+                <a href="#food">
+                    <li>Gastronomia</li>
+                </a>
+                
             </ul>
         </nav>
 
         <!-- Menu lateral-->
-        <nav class="menu_lateral">
+        <!-- <nav class="menu_lateral">
             <ul>
-                <a href="#"><li>Gastronomia</li></a>
-                <a href="#"><li>Vida Noturna</li></a>
-                <a href="#"><li>Entretenimento</li></a>
+                <a href="#">
+                    <li>Gastronomia</li>
+                </a>
+                <a href="#">
+                    <li>Vida Noturna</li>
+                </a>
+                <a href="#">
+                    <li>Entretenimento</li>
+                </a>
             </ul>
-        </nav>
+        </nav> -->
 
         <!-- banner -->
-        <!-- img --> 
+        <!-- img -->
         <article class="banner_title">
             <div class="banner_title_background">
                 <h1>Bem-vindos ao Traveller!</h1>
                 <p>Fique por dentro de tudo o que precisa saber para curtir as suas viagens ao máximo</p>
             </div>
-            <a href="#" class="banner_btn">Começar a aventura!</a>
+            <a href="#food" class="banner_btn">Começar a aventura!</a>
         </article>
         <!-- button -->
-        <article class="banner"> 
+        <article class="banner">
             <img src="../Img/shutterstock_459494017.png" alt="imagem ilustrativa" class="banner_img">
         </article>
-        </header>
+    </header>
     <!--fim da primeira página -->
 
     <!-- GASTRONOMIA -->
+    <div id="food">
     <div class="food_background">
         <h2>Hora de abrir o apetite!</h2>
     </div>
     <section class="food_container">
         <!-- Onde comer -->
-           <article class="food_box">
-               <div class="food_box_content">
-                   <h3>Onde vamos comer?</h3>
-                   <p>Existe uma infinidade de lugares que você pode abrir o apetite e alguns estão mais perto do que você imagina.</p>
-                </div>
-            </article>
-                <!-- Fim de onde comer -->
+        <article class="food_box">
+            <div class="food_box_content">
+                <h3>Onde vamos comer?</h3>
+                <p>Existe uma infinidade de lugares que você pode abrir o apetite e alguns estão mais perto do que você
+                    imagina.</p>
+            </div>
+        </article>
+        <!-- Fim de onde comer -->
 
         <!-- O que comer -->
-             <article class="food_box">
+        <article class="food_box">
             <div class="food_box_content">
                 <h3>O que tem de bom?</h3>
-                <p>São tantas opções que ficam dificil escolher só uma: massas, pratos típicos e até receitas caseiras abrem o apetite do viajante.</p>
+                <p>São tantas opções que ficam dificil escolher só uma: massas, pratos típicos e até receitas caseiras
+                    abrem o apetite do viajante.</p>
             </div>
-            </article>
-            <!-- Fim de o que comer -->
-        
+        </article>
+        <!-- Fim de o que comer -->
+
         <!-- Quanto gastar -->
-            <article class="food_box">
+        <article class="food_box">
             <div class="food_box_content">
                 <h3>Quanto vou gastar?</h3>
                 <p>O mesmo vale para o quanto você quer gastar. Mais uma vez o seu bolso é quem manda!</p>
             </div>
-            </article>
-            <!-- audio & text button -->
-            <article class="btn-container">
-                    <button id="food_audio_btn" onclick="audioFood.play();">Escute nossas dicas</button>
-                    <button id="food_text_btn">Leia nossas dicas</button>
-            </article>
-        </section>
-        <!-- Fim de o que comer -->
+        </article>
 
-        <!-- VIDA NOTURNA -->
-        <h2 class="night_life_title">Chegou o momento de curtir a noite!</h2>
-        <section class="night_life_container">
-       <!-- Onde comer -->
-           <article class="night_life_box">
-               <div class="night_life_box_content">
-                   <h3>Onde vamos comer?</h3>
-                   <p>Antes de cair na pista de dança e conhecer pessoas novos, que tal aproveitar para beliscar algo?</p>
-            </article>
-                <!-- Fim de onde comer -->
+        <!-- audio & text button -->
+        <article class="btn-container">
+            <button id="food_audio_btn" onclick="audioFood.play();">Escute nossas dicas</button>
+        </article>
+    </section>
+    </div>
+    <!-- Fim de o que comer -->
+
+    <!-- VIDA NOTURNA -->
+    <div id="night">
+    <h2 class="night_life_title">Chegou o momento de curtir a noite!</h2>
+    <section class="night_life_container">
+        <!-- Onde comer -->
+        <article class="night_life_box">
+            <div class="night_life_box_content">
+                <h3>Onde vamos comer?</h3>
+                <p>Antes de cair na pista de dança e conhecer pessoas novos, que tal aproveitar para beliscar algo?</p>
+                <button id="night_life_audio_btn" onclick="audioNight.play();">Escute nossas dicas</button>
+            </div>
+        </article>
+        <!-- Fim de onde comer -->
 
         <!-- O que comer -->
-             <article class="night_life_box">
+        <article class="night_life_box">
             <div class="night_life_box_content">
                 <h3>O que tem de bom?</h3>
                 <p>Agora temos energia de sobra para curtir a noite e nos divertirmos ao máximo!</p>
+                <button id="night_life_text_btn">Leia nossas dicas</button>
+                <!-- modal -->
+                <div class="modal_container_night" id="modal_container_night">
+                    <article class="modal">
+                            <h3>As melhores baladas ao redor do mundo para você curtir a noite</h3>
+                            <p>Quem não gosta de uma festa não é? pensando nisso, selecionamos 5 das mais famosas e badaladas casas noturnas do mundo para você conhecer.
+                                
+                                <h3>Club Space</h3>
+                                <p>
+                                    Localizada em Ibiza, ilha conhecida mundialmente por ser muito badalada, hoje é
+                                    considerada como uma das melhores baladas de música eletrônica do mundo.</p>
+                                
+                                    <h3>Fabrik</h3>
+                                    <p> 
+                                    Situada em Madrid, em uma região próxima a muitas indústrias, daí vem o nome Fabrik.
+                                    Todos os domingos na parte da tarde, acontece uma tradicional festa que termina na
+                                    segunda de manhã. A casa tem capacidade para 5.000 pessoas.</p>
+
+                                    <h3>Green Valley</h3>
+                                <p>
+                                    A Green Valey é a mais famosa entre as casas de música eletrônica brasileira.
+                                    Situada em
+                                    Balneário Camboríu, litoral de Santa Catarina, fica aos pés de uma floresta verde
+                                    tropical e possui uma decoração exuberante.</p>
+                                    <h3>Amnesia</h3>
+                                    <p> 
+                                    Também localizada na ilha de Ibiza, a casa fica em um local construído no século
+                                    XVIII e
+                                    é considerada a melhor em qualidade de som.</p>
+                                <h3>Pacha</h3>
+                                <p>
+                                Pacha virou uma rede de franquias espalhadas pelo mundo, mas foi em Ibiza que a casa se
+                                estabeleceu. Possui uma decoração baseada em sensualidade, mas sem exageros e ainda um
+                                bar ao ar livre.</p>
+                                <h3>Sankeys</h3>
+                               <p>
+                                Com as suas portas abertas desde 1994, também já foi eleita como a melhor do mundo. Tem
+                                decoração futurista, um som de ótima qualidade e localiza-se em Manchester, Na
+                                Inglaterra.</p>
+                            <button id="close_night_text">Fechar</button>
+                    </article>
+                </div>
             </div>
         </article>
     </section>
-    <article class="night_btn_container">
-        <button id="night_life_audio_btn" onclick="audioNight.play();">Escute nossas dicas</button>
-        <button id="night_life_text_btn">Leia nossas dicas</button>
-       </article>
+    </div>
+
 
     <!-- ENTRETENIMENTO -->
-        <h2 class="fun_title">Sol e muita diversão!</h2>
+    <div id="fun">
+    <h2 class="fun_title">Sol e muita diversão!</h2>
     <section class="fun_container">
-       <!-- Onde comer -->
-           <article class="fun_box">
-               <div class="fun_box_content">
-                   <h3>Lugares para conhecer</h3>
-                   <p>Quem está sempre em busca de uma aventutra, não vai se decepcionar com a quantidade de pontos turísticos que existem dentro e fora do pais.</p>
-                   <div>
-                       <button id="fun_text_btn" onclick="audioFun.play();">Escute nossas dicas</button>
-                   </div>
-                </div>
-            </article>
-                <!-- Fim de onde comer -->
+        <!-- Onde comer -->
+        <article class="fun_box">
+            <div class="fun_box_content">
+                <h3>Lugares para conhecer</h3>
+                <p>Quem está sempre em busca de uma aventutra, não vai se decepcionar com a quantidade de pontos
+                    turísticos que existem dentro e fora do pais.</p>
+                <button id="fun_text_btn">Leia nossas dicas</button>
+            </div>
+        </article>
+        <!-- Fim de onde comer -->
 
         <!-- Onde comer -->
-           <article class="fun_box">
-               <div class="fun_box_content">
-                   <h3>O que fazer</h3>
-                   <p>Separamos algumas dicas que vão despertar a sua curiosidade. Clique no botão para ouvir.</p>
-                   <div>
-                       <button id="fun_text_btn">Leia nossas dicas</button>
-                   </div>
+        <article class="fun_box">
+            <div class="fun_box_content">
+                <h3>O que fazer</h3>
+                <p>Separamos algumas dicas que vão despertar a sua curiosidade. Clique no botão para ouvir.</p>
+                <button id="fun_text_btn" onclick="audioFun.play();">Escute nossas dicas</button>
+                <!-- modal -->
+                <div class="modal_container" id="modal_container">
+                    <article class="modal">
+                        <h3>5 lugares para se divertir mundo afora</h3>
+                        <p>Você tem curiosidade em descobrir quais são os pontos turísticos mais visitados do mundo?
+                            Desde 2002, o TripAdvisor, famoso site de viagens, faz uma análise de todas as avaliações e
+                            opiniões que os viajantes deixam na plataforma. Agora você vai descobrir 3 destinos mais
+                            visitados ao redor do mundo.</p>
+
+                        <h4>1. Santuário Histórico de Machu Picchu</h4>
+                        <p>Machu Picchu é o berço da civilização inca e, sem dúvidas, um dos lugares que todo mundo
+                            deveria
+                            conhecer antes de morrer — e um dos pontos turísticos mais visitados do mundo.</p>
+
+                        <h4>2. Torre Eiffel</h4>
+                        <p>A Torre Efiffel é uma experiência única e praticamente obrigatória para todos os visitantes de Paris. Os melhores momentos para subir na torre são no início da manhã, quando ainda não há filas  intermináveis, ou ao anoitecer, para desfrutar da cidade das luzes em todo o seu esplendor.
+                        </p>
+
+                        <h4>3. Cataratas do iguaçu</h4>
+                        <p> As Cataratas do Iguaçu são formadas por um conjunto de 275 quedas d’água de até 80 metros de altura, no Rio Iguaçu. Entretanto, o número das quedas varia de 150 a 300, dependendo da época do ano, principalmente, das chuvas.</p>
+
+                        <h4>4. Duomo di Milano</h4>
+                        <p> Duomo di Milano é um dos monumentos mais espetaculares de toda a Itália. Tanto por dentro
+                            quanto por fora, você vai ficar de boca aberta em frente a tanta beleza e história! Ela foi
+                            construída a partir de 1386 por iniciativa do arcebispo Antonio de Saluzzi (1376-1401), e
+                            sua conclusão só ocorreu no século XIX. É a única igreja do mundo que possui sua própria
+                            marmoraria, portanto, desde a construção até hoje, a jazida de Candoglia fornece o mármore
+                            para a restauração do edifício.</p>
+
+                        <h4>5. Basílica de São Pedro</h4>
+                        <p>O menor país do mundo possui uma atração considerada como um dos pontos turísticos mais
+                            visitados do mundo: a Basílica de São Pedro. Quem visita Roma, não pode de jeito nenhum
+                            deixar de dar um pulinho no Vaticano para ver essa igreja esplendorosa.</p>
+
+                        <button id="close_fun_text">Fechar</button>
+                    </article>
                 </div>
-            </article>
-                <!-- Fim de onde comer -->
+            </div>
+        </article>
+        <!-- Fim de onde comer -->
     </section>
+    </div>
+
     <!-- Rodapé -->
     <footer>
         <section class="waves">
@@ -172,6 +274,7 @@
     <script src="../JS/script.js"></script>
 
 </body>
+
 </html>
 
 <!-- inserir audio nos textos com botão para facilitar o entendimento do conteúdo -->
