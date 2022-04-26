@@ -41,7 +41,6 @@ h1,h2, h3,h4{
     text-align: center;
 }
 
-
 /*
 ====================================
 Menu (tela grande)
@@ -75,6 +74,20 @@ Menu (tela grande)
  color: #fff;
 }
 
+@media screen and (max-width:678px){
+    .menu_grande{
+        display: none;
+    }
+}
+
+@media screen and (min-width:678px){
+    .menu_lateral{
+        display: none;
+    }
+}
+
+
+
 /*
 ====================================
 Menu (lateral)
@@ -82,8 +95,21 @@ Menu (lateral)
 */
 
 .menu_lateral{
-    display: none;
-    transform: translateY(100%);
+    background-color:transparent;
+}
+
+.menu_lateral ul{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top:0;
+  right: 0;
+}
+
+.menu_lateral ul li{
+    color: #000;
+    padding: 10px;
+    display: flex;
 }
 
 /*
@@ -128,6 +154,12 @@ Banner
     transition: .5s;
 }
 
+@media screen and (max-width:678px){
+    .banner_btn{
+      font-size: 1.2rem;
+    }
+}
+
 .banner_btn:hover{
     background-color:#fff;
     color: rgb(77, 121, 56);
@@ -162,6 +194,23 @@ Gastronomia
     
 }
 
+@media screen and (max-width:678px){
+    .food_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+    .food_box{
+        margin: 1rem 0;
+    }
+    .food_audio_btn{
+    position: absolute;
+        top: 200%;
+    }
+}
+
 .food_background{
     width: 100vw;
     background-color: yellow;
@@ -184,13 +233,6 @@ Gastronomia
 
 .food_box_content h3{
     margin-bottom: 10px;
-}
-
-@media screen and (max-width:678px){
-   .box{
-       display: grid;
-       grid-template-columns: 1fr;
- }
 }
     
 .btn-container{
@@ -245,7 +287,7 @@ vida noturna
 ====================================
 */
 
-.night_life_container:not(.night_btn_container){
+.night_life_container{
     width: 100vw;
     height: 100vh;
     background-image: url(https://sozbg.rs/wp-content/uploads/2021/10/Belgrade-nightlife-tips-for-how-to-survive.jpg);
@@ -255,6 +297,19 @@ vida noturna
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media screen and (max-width:678px){
+    .night_life_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+    .night_life_box{
+        margin: 1rem 0;
+    }
 }
 
 .night_life_box{
@@ -396,6 +451,20 @@ Entretenimento
     justify-content: space-evenly;
     align-items: center;
 }
+
+@media screen and (max-width:678px){
+    .fun_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+    .fun_box{
+        margin: 1rem 0;
+    }
+}
+
 
 .fun_title{
   background-color: lightsteelblue
