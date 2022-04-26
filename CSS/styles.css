@@ -28,13 +28,11 @@ h2{
 
 }
 h3{
-  font-size: 1.2rem;   
-  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 h4{
-  font-size: 1rem;   
-  margin: 0 1rem;
+  font-size: 1.2rem;   
 }
 
 h1,h2, h3,h4{
@@ -398,15 +396,43 @@ modal night
 */
 
 .modal_container_night{
+    width: 90vw;
+    height: 5vh;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 50vw;
+    top: 0;
+    left: 2%;
     opacity: 0;
     pointer-events: none;
-    margin:30px;
+    margin:30px; 
+}
+
+.modal h4{
+ margin-bottom: 10px;
+}
+
+.modal p{
+ margin-bottom: 10px;
+}
+
+@media screen and (max-width:678px){
+   .modal_container_night{
+    width: 90vw;
+    position: fixed;
+    top: -1%;
+    left: 0.1%;
+    opacity: 0;
+    pointer-events: none;
+    margin:30px; 
+   }
+   .modal h4{
+    font-size: 1rem;
+    margin: 5px 0;
+
+   }
+   .modal p{
+    font-size: 15px;
+    margin-bottom: 10px;
+   }
 }
 
 .modal_container_night.show_2{
@@ -531,15 +557,49 @@ modal fun
 */
 
 .modal_container{
+    width: 90vw;
+    height: 5vh;
     position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75vw;
-    height: 50vw;
+    top: 0;
+    left: 2%;
     opacity: 0;
     pointer-events: none;
-    margin:30px;
+    margin:30px; 
+}
+.modal h3{
+ padding-bottom: 2rem;
+}
+
+.modal h4{
+ margin-bottom: 10px;
+}
+
+.modal p{
+ margin-bottom: 10px;
+}
+
+@media screen and (max-width:678px){
+   .modal_container{
+    width: 90vw;
+    position: fixed;
+    top: -1%;
+    left: 0.1%;
+    opacity: 0;
+    pointer-events: none;
+    margin:30px; 
+   }
+   .modal h3{
+       padding-bottom: 20px;
+   }
+   .modal h4{
+    font-size: 1rem;
+    margin: 5px 0;
+
+   }
+   .modal p{
+    font-size: 15px;
+    margin-bottom: 10px;
+   }
 }
 
 .modal_container.show{
